@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Search</title>
+    <link rel="stylesheet" href="css/html-reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href = "#main">Skip to Main Content</a>
-              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-              <nav>
-                  <ul>
-                      <li><a href = "index.html">Home</a></li>
-                      <li><a href = "resume.html">Resumes</a></li>
-                      <li><a href = "appointments.html">CDO Appointments</a></li>
-                      <li class="active"><a href= "search.html">Career Search</a></li>
-                  </ul>
-              </nav>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <div class="nav-container">
+                <img class="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <nav class="inner-container">
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "resume.html">Resumes</a></li>
+                        <li><a href = "appointments.html">Schedule</a></li>
+                        <li class="active"><a href= "search.html">Career Search</a></li>
+                    </ul>
+                </nav>
+              </div>
         <h1>Begin Your Career Search</h1>
     </header>
     <main id="main">
-    <section>
+    <section class="contain">
         <h2>UMSI Specific Resources</h2>
-        <div>
-            <img src="images/UMSI-CareerLink-logo.png" alt="Career Link Logo">
-            <h3>What is UMSI CareerLink?</h3>
-            <p>UMSI CareerLink offers on-demand access to career support: internships, jobs, career coaching, career-building resources, special events and more. This online tool, which replaces the iTrack platform, is exclusively for enrolled UMSI students and alumni.</p>
-            <p>Some of the most important features to know on CareerLink to help you search for job/internship postings include: </p>
-            <ul>
+            <div class="center">
+                <h3>What is UMSI CareerLink?</h3>
+                <p>UMSI CareerLink offers on-demand access to career support: internships, jobs, career coaching, career-building resources, special events and more. This online tool, which replaces the iTrack platform, is exclusively for enrolled UMSI students and alumni.</p>
+                <p>Some of the most important features to know on CareerLink to help you search for job/internship postings include: </p>
+            </div>
+            <div class="left">
+                <ul>
                 <li><strong>OCI and Job Listings Tab</strong> - This is the tab where you'll go to search for opportunities in CareerLink. OCI stands for on-campus interviews, and job listings are postings of opportunities that you can apply for.</li>
                 <li><strong>Filters</strong> - We recommend using filters within OCI and job listings to streamline your search as much as possible.
                     <ul>
@@ -37,124 +45,148 @@
                 <li><strong>"Turn on email alerts for this search"</strong> - You'll see this note in the bottom left corner of the OCI and Job Listings page. Click on it to set up automatic email alerts for when new opportunities that align with your filters are posted.</li>
             </ul>
         </div>
-        <div>
-            <h3>Explore internships and jobs</h3>
-            <p>Check the latest opportunities from vetted employers who are looking for people with UMSI skills. Research employers through our company profiles and get notified about new jobs, internships or events in the industries you prefer. Manage your entire search process, from applications to offers, all in one place. <br> <a href="https://si-umich.12twenty.com/Login" target="_blank">See opportunities.</a> </p>
+        <div class="right">
+            <img src="images/UMSI-CareerLink-logo.png" alt="Career Link Logo">
+            <img src="images/hitori.jpg" alt="person on their computer">
         </div>
-        <div>
-            <h3>Attend networking events, workshops and employer sessions</h3>
-            <p>Register for UMSI-exclusive networking, recruiting and career education events led by employers, alumni, and the Career Development Office team. Fine-tune the skills that will help you stand out in the marketplace. Meet employers, recruiters and UMSI alumni who can help you connect to the best internships and jobs. <br> <a href="https://si-umich.12twenty.com/events#/events/home" target="_blank" title="Opens in new tab">Browse events.</a></p>
+        <div class="center">
+            <div>
+                <h3>Explore internships and jobs</h3>
+                <p>Check the latest opportunities from vetted employers who are looking for people with UMSI skills. Research employers through our company profiles and get notified about new jobs, internships or events in the industries you prefer. Manage your entire search process, from applications to offers, all in one place. <br> <a href="https://si-umich.12twenty.com/Login" target="_blank">See opportunities.</a> </p>
+            </div>
+            <div>
+                <h3>Attend networking events, workshops and employer sessions</h3>
+                <p>Register for UMSI-exclusive networking, recruiting and career education events led by employers, alumni, and the Career Development Office team. Fine-tune the skills that will help you stand out in the marketplace. Meet employers, recruiters and UMSI alumni who can help you connect to the best internships and jobs. <br> <a href="https://si-umich.12twenty.com/events#/events/home" target="_blank" title="Opens in new tab">Browse events.</a></p>
+            </div>
         </div>
-        <h4>Students/alumni: <a href="https://si-umich.12twenty.com/Login" target="_blank" title="Opens in new tab">Join now or log in</a></h4>
-        <h4>Employers: <a href="https://si-umich.12twenty.com/hire" target="_blank" title="Opens in new tab">Learn more</a></h4>
+        <img src="images/handing.jpg" class="center" alt="student handing resume to recruiter">
+        <div class="left">
+            <h4>Students/alumni: <a href="https://si-umich.12twenty.com/Login" target="_blank" title="Opens in new tab">Join now or log in</a></h4>
+            <h4>Employers: <a href="https://si-umich.12twenty.com/hire" target="_blank" title="Opens in new tab">Learn more</a></h4>
+        </div>
     </section>
-    <section>
+    <section class="contain">
         <h2>Job Search Platforms</h2>
-        <h3>University of Michigan Resources</h3>
-        <p>As a student of the University of Michigan, you have special access to the platforms listed below. If you are an International Student (F-1/J-1), we recommend that you look at the <a href="https://internationalcenter.umich.edu/students/campus-employment" target="_blank" title="Opens in new tab">International Center's Guide to on-campus Employment</a></p>
-        <ul>
-            <li><a href="https://careercenter.umich.edu/content/introducing-handshake" target="_blank" title="Opens in new tab">Handshake</a></li>
-            <li><a href="https://interstride.com/umich" target="_blank" title="Opens in new tab">Interstride</a></li>
-            <li><a href="https://studentemployment.umich.edu/" target="_blank" title="Opens in new tab">Student Employment Site</a></li>
-            <li><a href="https://careers.umich.edu/" target="_blank" title="Opens in new tab">U-M Careers</a></li>
-            <li><a href="https://its.umich.edu/student-jobs/" target="_blank" title="Opens in new tab">U-M Information Technology Services (ITS) Student Roles</a></li>
-            <li><a href="https://ai.umich.edu/students" target="_blank" title="Opens in new tab">U-M Center for Academic Innovation (CAI) Student Roles</a></li>
-            <li><a href="https://www.lib.umich.edu/about-us/work-us" target="_blank" title="Opens in new tab">U-M Libraries</a></li>
-        </ul>
-        <h3>Large Job Search Platforms</h3>
-        <p>These are the most common ways to look into jobs outside of the University provided resources.</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/home" target="_blank" title="Opens in new tab">LinkedIn</a></li>
-            <li>
-                <a href="https://www.indeed.com/" target="_blank" title="Opens in new tab">Indeed</a>
-                <ul>
-                    <li><a href="https://docs.google.com/document/d/15b0q8LJQdyR-fPMlEWRqNSSz-Ib9G3Vf1ZyHXQoy6no/edit?usp=sharing" target="_blank">LinkedIn Profile Rubric</a></li>
-                    <li><a href="https://umich.instructure.com/courses/137916/modules/items/2421616">LinkedIn Profile Checklist</a></li>
-                </ul>
-            </li>
-            <li><a href="https://www.google.com/search?q=jobs+near+me&ibp=htl;jobs&sa=X&ved=2ahUKEwj867rGg8qGAxW8vokEHYB3N5AQutcGKAF6BAgbEAQ#htivrt=jobs&htidocid=ZbnOLw9I22qRm3pLAAAAAA%3D%3D&fpstate=tldetail" target="_blank" title="Opens in new tab">Google Jobs</a></li>
-            <li><a href="https://www.wayup.com/" target="_blank" title="Opens in new tab">WayUp</a></li>
-        </ul>
-        <h3>Industry-Specific Job Search Platforms</h3>
-        <p>These are resources for job searches that are specific to certain fields like Start-Ups, Libraries and Archives, and more.</p>
-        <ul>
-            <li><a href="https://wellfound.com/" target="_blank" title="Opens in new tab">Wellfound</a>, <a href="https://builtin.com/">Built In</a> (Start Ups)</li>
-            <li><a href="https://www.idealist.org/en" target="_blank" title="Opens in new tab">Idealist</a> (Non-profits)</li>
-            <li><a href="https://www.teamworkonline.com/" target="_blank" title="Opens in new tab">Teamwork Online (Sports and Entertainment)</a></li>
-            <li><a href="https://www.dice.com/" target="_blank" title="Opens in new tab">Dice</a> (Tech)</li>
-            <li><a href="https://inalj.com/" target="_blank" title="Opens in new tab">I Need a Library Job - INALJ</a> (Libraries)</li>
-            <li><a href="https://archivesgig.com/" target="_blank" title="Opens in new tab">Archives Gig</a> (Archives)</li>
-            <li><a href="https://www.usajobs.gov/" target="_blank" title="Opens in new tab">USA Jobs</a> (Government)</li>
-            <li><a href="https://www.parkerdewey.com/career-launchers" target="_blank" title="Opens in new tab">Parker Dewey</a> (Short-term opportunities)</li>
-            <li><a href="https://www.benzevgreen.com/jobs/" target="_blank" title="Opens in new tab">Public Interest Tech Jobs</a> (List of job boards and resources compiled by Dr. Ben Green, UMSI Faculty Member)</li>
-        </ul>
+        <div class="lefty">
+            <h3>University of Michigan Resources</h3>
+            <p>As a student of the University of Michigan, you have special access to the platforms listed below. If you are an International Student (F-1/J-1), we recommend that you look at the <a href="https://internationalcenter.umich.edu/students/campus-employment" target="_blank" title="Opens in new tab">International Center's Guide to on-campus Employment</a></p>
+            <ul>
+                <li><a href="https://careercenter.umich.edu/content/introducing-handshake" target="_blank" title="Opens in new tab">Handshake</a></li>
+                <li><a href="https://interstride.com/umich" target="_blank" title="Opens in new tab">Interstride</a></li>
+                <li><a href="https://studentemployment.umich.edu/" target="_blank" title="Opens in new tab">Student Employment Site</a></li>
+                <li><a href="https://careers.umich.edu/" target="_blank" title="Opens in new tab">U-M Careers</a></li>
+                <li><a href="https://its.umich.edu/student-jobs/" target="_blank" title="Opens in new tab">U-M Information Technology Services (ITS) Student Roles</a></li>
+                <li><a href="https://ai.umich.edu/students" target="_blank" title="Opens in new tab">U-M Center for Academic Innovation (CAI) Student Roles</a></li>
+                <li><a href="https://www.lib.umich.edu/about-us/work-us" target="_blank" title="Opens in new tab">U-M Libraries</a></li>
+            </ul>
+        </div>
+        <div class="righty">
+            <h3>Large Job Search Platforms</h3>
+            <p>These are the most common ways to look into jobs outside of the University provided resources.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/home" target="_blank" title="Opens in new tab">LinkedIn</a></li>
+                <li>
+                    <a href="https://www.indeed.com/" target="_blank" title="Opens in new tab">Indeed</a>
+                    <ul>
+                        <li><a href="https://docs.google.com/document/d/15b0q8LJQdyR-fPMlEWRqNSSz-Ib9G3Vf1ZyHXQoy6no/edit?usp=sharing" target="_blank">LinkedIn Profile Rubric</a></li>
+                        <li><a href="https://umich.instructure.com/courses/137916/modules/items/2421616">LinkedIn Profile Checklist</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.google.com/search?q=jobs+near+me&ibp=htl;jobs&sa=X&ved=2ahUKEwj867rGg8qGAxW8vokEHYB3N5AQutcGKAF6BAgbEAQ#htivrt=jobs&htidocid=ZbnOLw9I22qRm3pLAAAAAA%3D%3D&fpstate=tldetail" target="_blank" title="Opens in new tab">Google Jobs</a></li>
+                <li><a href="https://www.wayup.com/" target="_blank" title="Opens in new tab">WayUp</a></li>
+            </ul>
+        </div>
+        <img class="right linkedin" src="images/linked.png" alt="linkedin logo">
+        <div class="center">
+            <h3>Industry-Specific Job Search Platforms</h3>
+            <p>These are resources for job searches that are specific to certain fields like Start-Ups, Libraries and Archives, and more.</p>
+            <ul>
+                <li><a href="https://wellfound.com/" target="_blank" title="Opens in new tab">Wellfound</a>, <a href="https://builtin.com/">Built In</a> (Start Ups)</li>
+                <li><a href="https://www.idealist.org/en" target="_blank" title="Opens in new tab">Idealist</a> (Non-profits)</li>
+                <li><a href="https://www.teamworkonline.com/" target="_blank" title="Opens in new tab">Teamwork Online (Sports and Entertainment)</a></li>
+                <li><a href="https://www.dice.com/" target="_blank" title="Opens in new tab">Dice</a> (Tech)</li>
+                <li><a href="https://inalj.com/" target="_blank" title="Opens in new tab">I Need a Library Job - INALJ</a> (Libraries)</li>
+                <li><a href="https://archivesgig.com/" target="_blank" title="Opens in new tab">Archives Gig</a> (Archives)</li>
+                <li><a href="https://www.usajobs.gov/" target="_blank" title="Opens in new tab">USA Jobs</a> (Government)</li>
+                <li><a href="https://www.parkerdewey.com/career-launchers" target="_blank" title="Opens in new tab">Parker Dewey</a> (Short-term opportunities)</li>
+                <li><a href="https://www.benzevgreen.com/jobs/" target="_blank" title="Opens in new tab">Public Interest Tech Jobs</a> (List of job boards and resources compiled by Dr. Ben Green, UMSI Faculty Member)</li>
+            </ul>
+        </div>
     </section>
     <section>
         <h3>Help with Resource Access</h3>
         <p>If you have an immediate need or you have any trouble accessing any of these links or resources, please email <a href="mailto:umsi.careers@umich.edu">umsi.careers@umich.edu</a> </p>
     </section>
+    <br>
     </main>
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-          <img src="images/umsi-logo-vert-u.png" alt="school of information logo">
-          <div class="address">
-              <p>&copy; Copyright 2025 Regents of the University of Michigan </p>
-              <pre>
-                  School of Information
-                  University of Michigan
-                  2200 Hayward Street
-                  Ann Arbor, MI 48109
-              </pre>
+        <div class="containers">
+          <div class="title">
+            <p>University of Michigan School of Information</p>
+            <p>
+              <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a>
+            </p>
+            <br>
+            <img class ="logo" src="images/umsi-logo-vert-u.png" alt="school of information logo">
           </div>
-          <div class="links">
-              <ul class="social-media-icon">
-                  <li>
-                      <a href="https://twitter.com/umsi" class="social-media-icon" title="University of Michigan School of Information X (opens in a new window)" target="_blank">
-                          <img src="images/twitter.png" alt="twitter icon">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.instagram.com/umschoolofinformation" class="social-media-icon" title="University of Michigan School of Information Instagram (opens in a new window)" target="_blank">
-                          <img src="images/insta.png" alt="instagram icon">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.facebook.com/uomsi/" class="social-media-icon" title="University of Michigan School of Information Facebook (opens in a new window)" target="_blank">
-                          <img src="images/facebook.png" alt="facebook icon">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.youtube.com/user/schoolofinformation" class="social-media-icon" title="University of Michigan School of Information Youtube (opens in a new window)" target="_blank">
-                          <img src="images/youtube.jpg" alt="youtube icon">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" class="social-media-icon" title="University of Michigan School of Information LinkedIn (opens in a new window)" target="_blank">
-                          <img src="images/linked.png" alt="LinkedIn icon">
-                      </a>
-                  </li>
-              </ul>
-              <ul class="plain-links">
-                  <li>
-                      <a href="https://www.si.umich.edu/about-umsi/contact-us" target="_blank">Contact Us</a>
-                  </li>
-                  <li>
-                      <a href="https://www.si.umich.edu/privacy-statement" target="_blank">Privacy Statement</a>
-                  </li>
-              </ul>
-              <ul class="feedback links">
-                <li>
-                    <a href="https://umich.qualtrics.com/jfe/form/SV_9RAiBJITFVOxkHz" target="_blank" title="(opens in a new window)">
-                        Provide Feedback
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.si.umich.edu/about-umsi/media-center" target="_blank" title="(opens in a new window)">
-                        Media Center
-                    </a>
-                </li>
+        <div class="address">
+            <p>&copy; Copyright 2025 Regents of the University of Michigan </p>
+            <br>
+            <p>
+                School of Information
+                University of Michigan
+                2200 Hayward Street
+                Ann Arbor, MI 48109
+            </p>
+        </div>
+        <div class="twitter">
+          <a href="https://twitter.com/umsi" class="social-media-icon" title="University of Michigan School of Information X (opens in a new window)" target="_blank">
+              <img src="images/twitter.png" alt="twitter icon">
+          </a>
+        </div>
+        <div class="insta">
+          <a href="https://www.instagram.com/umschoolofinformation" class="social-media-icon" title="University of Michigan School of Information Instagram (opens in a new window)" target="_blank">
+              <img src="images/insta.png" alt="instagram icon">
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="https://www.facebook.com/uomsi/" class="social-media-icon" title="University of Michigan School of Information Facebook (opens in a new window)" target="_blank">
+              <img src="images/facebook.png" alt="facebook icon">
+          </a>
+        </div>
+        <div class="youtube">
+          <a href="https://www.youtube.com/user/schoolofinformation" class="social-media-icon" title="University of Michigan School of Information Youtube (opens in a new window)" target="_blank">
+              <img src="images/youtube.jpg" alt="youtube icon">
+          </a>
+        </div>
+        <div class="linked">
+          <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" class="social-media-icon" title="University of Michigan School of Information LinkedIn (opens in a new window)" target="_blank">
+              <img src="images/linked.png" alt="LinkedIn icon">
+          </a>
+        </div>
+        <div class="plain-links">
+            <ul>
+              <li>
+                <a href="https://www.si.umich.edu/about-umsi/contact-us" target="_blank">Contact Us</a>
+              </li>
+              <li>
+                <a href="https://www.si.umich.edu/privacy-statement" target="_blank">Privacy Statement</a>
+              </li>
             </ul>
-          </div>
+            <ul class="feedback links">
+              <li>
+                  <a href="https://umich.qualtrics.com/jfe/form/SV_9RAiBJITFVOxkHz" target="_blank" title="(opens in a new window)">
+                      Provide Feedback
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.si.umich.edu/about-umsi/media-center" target="_blank" title="(opens in a new window)">
+                      Media Center
+                  </a>
+              </li>
+            </ul>
+        </div>
+        </div>
     </footer>
 </body>
 </html>
