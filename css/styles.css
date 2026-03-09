@@ -404,6 +404,7 @@ footer{
 .contain > * {
     min-width: 0;
 }
+/* this came from https://stackoverflow.com/questions/43311943/prevent-content-from-expanding-grid-items */
 
 .plain-links ul{
     list-style: none;
