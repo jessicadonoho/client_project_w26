@@ -60,8 +60,9 @@ h1{
 }
 
 .inner-container{
-    grid-column: 3 / 8;
+    grid-column: 3 / -1;
     align-content: center;
+    grid-row: 1/span 1;
 }
 
 nav ul li{
@@ -80,6 +81,9 @@ nav ul li a{
     text-decoration: none;
     color: #00274C;
     font-weight: 600;
+    border: #00274C 2px solid;
+    padding: 2px;
+    white-space: nowrap;
 }
 
 nav ul li a:visited{
@@ -158,6 +162,8 @@ p, li{
     grid-column: 4/-1;
     grid-row:1/span 1;
     padding-left: 10px;
+    justify-self: center;
+    align-self: center;
 }
 
 .why{
@@ -303,12 +309,18 @@ strong{
 }
 
 .drop-in ul ul{
-    
     background-color: #f4e6b2;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
     overflow: scroll;
+}
+.buton{
+    border: 2px black solid;
+    padding:5px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
 }
 
 
@@ -348,7 +360,7 @@ strong{
 /* career search */
 .contain{
     display:grid;
-    grid-template-columns: repeat(16, auto);
+    grid-template-columns: repeat(16, 1fr);
 }
 
 .contain > * {
@@ -446,7 +458,7 @@ footer{
 }
 
 .title{
-    grid-column: 2/span 5;
+    grid-column: 1/-1;
     text-align: center;
     grid-row: 1/span 1;
 }
@@ -456,6 +468,8 @@ footer{
     max-height: 75%;
     border: #011121 2px solid;
     border-radius: 10px;
+    width: 40%;
+    height:65%
 }
 
 .address{
@@ -484,8 +498,10 @@ footer{
 }
 
 .twitter a img, .insta a img, .facebook a img, .youtube a img, .linked a img{
-    border-radius: 40%;
+    border-radius: 50%;
     border:#00274C 3px solid;
+    height:70%;
+    width:70%;
 }
 
 .containers > * {
@@ -505,4 +521,311 @@ footer{
 
 .plain-links ul{
     list-style: none;
+}
+
+@media screen and (width >= 510px){
+    nav ul li:nth-child(2n+1){
+        width: auto;
+    }
+}
+
+@media screen and (width >= 623px){
+    /* make the nav sit centered to the right of the logo and use flex so anchors control background/border */
+    nav ul li{
+        width: auto;
+        float: none;
+        margin: 0 8px;
+    }
+    nav ul li:nth-child(odd){
+        width: auto;
+    }
+    nav{
+        justify-self: center;
+        width: 100%;
+    }
+    .inner-container{
+        grid-column: 2/-1;
+        justify-self: center;
+        width: 80%;
+        max-width: 1100px;
+    }
+    .logo{grid-row: 1/span 1;}
+
+    /* switch the list to flex so anchors can be full boxes inside their borders */
+    nav ul{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{
+        list-style: none;
+    }
+
+    /* stop styling the li on hover; style the anchor so background is clipped to its border */
+    nav ul li:hover{
+        background: transparent;
+    }
+    nav ul li a{
+        display: block;
+        box-sizing: border-box;
+        padding: 8px 12px;
+        border: 2px solid #00274C;
+        white-space: nowrap;
+    }
+    nav ul li a:hover{
+        background-color: #00274C;
+        color: #FFCB05;
+        text-decoration: none;
+    }
+    nav ul li a:visited:hover{
+        color: #FFCB05;
+    }
+    .active a:hover{
+        background-color:#00274C;
+        border-color: #FFCB05;
+        color: #FFCB05;
+    }
+    .active a{
+        padding: 8px 12px;
+    }
+}
+@media screen and (width >= 700px){
+    /* Nav */
+    .inner-container{
+        grid-column: 1/-1;
+    }
+    nav ul li a{
+        font-size: large;
+        padding: 10px;
+        margin: 0;
+    }
+    .active a{
+        padding: 10px;
+    }
+
+    /* home page */
+    .intros{
+        grid-column: 2/span 6;
+        grid-row: 1/span 1;
+    }
+    .video{
+        grid-column: 9/-1;
+        grid-row: 1/span 1;
+        margin: 20px 0;
+    }
+    .why{
+        grid-column: 9/ -1;
+        grid-row: 2/span 1;
+    }
+    .why li{
+        margin: 20px;
+    }
+    .start{
+        grid-column:1/span 8;
+        margin: 0 20px;
+    }
+    .container .small{
+        grid-column: 9/-1;
+        margin: 10px;
+        grid-row: 3/span 2;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .small img{
+        height:100%;
+        object-fit: cover;
+    }
+    .container .smally{
+        grid-column: 9/-1;
+        margin: 10px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .smally img{
+        height:100%;
+        object-fit: cover;
+    }
+    .popular{
+        grid-column: 1/span 8;
+        border: 2px solid black;
+        border-radius: 10px;
+        grid-row: 4/span 1;
+        align-self: center;
+        padding: 20px;
+        justify-self: stretch;
+        margin: 0 20px;
+    }
+
+    .container .smalleft{
+        grid-column: 1/span 8;
+        align-self: center;
+        height: 100%;
+        object-fit: cover;
+    }
+    .smalleft img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container .pararight{
+        grid-column: 9/-1;
+        margin:20px;
+        border:#011121 2px solid;
+        padding:20px;
+        border-radius: 10px;
+        background-color: #f4e6b2;
+        align-self: center;
+    }
+    .prgraph{
+        grid-column: 3/-3;
+    }
+    .stress{
+        grid-column: 3/-3;
+        justify-content: center;
+        text-align: center;
+    }
+    .twitter img, .insta img, .facebook img, .youtube img, .linked img{
+        width: 70%;
+        height:70%;
+    }
+    .twitter{
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+    }
+    .insta{
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+    }
+    .facebook{
+        grid-column: 3/span 1;
+        grid-row: 2/span 1;
+    }
+    .youtube{
+        grid-column: 4/span 1;
+        grid-row: 2/span 1;
+    }
+    .linked{
+        grid-column: 5/span 1;
+        grid-row: 2/span 1;
+    }
+    .plain-links{
+        grid-column: 8/-1;
+        grid-row: 2/span 1;
+        justify-self: left;
+    }
+
+    .title{
+        grid-column: 1/span 6;
+        justify-self: left;
+        margin-left:20px;
+    }
+    .address{
+        grid-column: 8/-1;
+        grid-row:1/span 1;
+    }
+    .containers{
+        grid-template-columns: repeat(11, 1fr);
+    }
+    .containers>*{
+        min-width: 0;
+    }
+    .what-to ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .what-to ul li{
+        display: inline-block;
+        width: 400px;
+        background-color: #f4e6b2;
+        padding: 10px;
+        margin: 2px;
+    }
+    .what-to ul li ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .what-to ul li ul li{
+        width:100%
+    }
+    .what-to ul li:nth-child(even){
+        background-color: #c6def4;
+    }
+    .how-to{
+        grid-column: 1/-1;
+    }
+
+    .intro{
+        grid-column: 1/span 9;
+        grid-row: 2/span 1;
+        margin-left: 20px;
+    }
+    .contain .career{
+        grid-column: 10/14;
+        grid-row: 2/span 1;
+    }
+    .left{
+        grid-column: 1/14;
+        margin-left: 20px;
+    }
+    .rightimg{
+        grid-column: 14/-1;
+        grid-row: 2/span 2;
+        justify-self: left;
+    }
+    .rightimg img{
+        height:100%;
+        object-fit: cover;
+    }
+    .text{
+        grid-column: 6/-1;
+        grid-row: 4/span 1;
+    }
+    .contain .leftimg{
+        grid-column: 1/span 5;
+        grid-row: 4/span 1;
+
+    }
+    .lefty{
+        grid-column: 1/span 5;
+        margin-left: 20px;
+        order:2;
+        overflow:scroll;
+        height:40vh;
+    }
+    .contain .linkedin{
+        grid-column: 16/span 1;
+        order:5;
+        align-self: start;
+        grid-row: 2/span 1;
+    }
+    .righty{
+        grid-column: 6/span 5;
+        order:3;
+        overflow:scroll;
+        height:40vh;
+    }
+    .middle{
+        order:4;
+        grid-column: 11/span 5;
+        overflow:scroll;
+        height:40vh;
+    }
+    .help{
+        margin: 0 20px;
+    }
+
+    .introi{
+        grid-column: 2/-2;
+        grid-row-start: 5;
+    }
+
+
+
 }
