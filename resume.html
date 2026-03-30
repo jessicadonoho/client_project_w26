@@ -154,7 +154,7 @@
         <img class ="logo" src="images/umsi-logo-vert-u.png" alt="school of information logo">
       </div>
     <div class="address">
-        <p>&copy; Copyright 2025 Regents of the University of Michigan </p>
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan </p>
         <br>
         <p>
             School of Information
@@ -215,3 +215,6 @@
 </body>
 
 </html>
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
