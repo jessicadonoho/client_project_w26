@@ -21,6 +21,20 @@ button{
     background-color: #FFCB05;
     border-radius: 10px;
     border:#00274C 4px dashed;
+    margin-left:20px;
+}
+
+button:hover{
+    background-color: #f4e6b2;
+}
+
+main a:hover{
+    border:#011121 2px double;
+    padding:2px;
+}
+
+.button:hover{
+    border:0px;
 }
 
 body{
